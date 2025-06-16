@@ -1,5 +1,5 @@
 ---
-title: 'Visit Us'
+title: 'Visit Us Soon'
 
 # The "header_menu_title" value will be used as text for header buttons.
 # The "title" value will be used if value for "header_menu_title" is not provided.
@@ -18,8 +18,8 @@ weight: 2
 # into the header menu at the top of the homepage.
 header_menu: true
 ---
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent feugiat lectus et magna placerat tincidunt. Nullam sit amet lectus vitae elit mollis rhoncus non eget lorem. Ut tempor sed dui quis volutpat.
+Mountain Valley Public House is currently in the planning stages. Once financing and permitting are in place, construction will begin at our site on Monument Street. We are all excited to get moving on construction and then begin brewing some great beer! A target opening date will be announced soon.
 
 ----
 
-In ultrices, est at lobortis pretium, magna quam mollis neque, id viverra odio est sit amet lorem. Mauris efficitur nunc vel lectus porttitor, sit amet sodales quam eleifend. Duis et felis ut mauris dignissim efficitur. Aliquam non sem eros. Integer elit ante, bibendum id hendrerit vitae, vestibulum eget risus. Nunc efficitur nisl in iaculis vestibulum.
+# Coming Soon!
