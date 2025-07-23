@@ -2,7 +2,7 @@
 title: "About Us"
 weight: 5
 header_menu: true
-detailed_page_path: /legal/
+detailed_page_path: /ja_bio/
 detailed_page_homepage_content: true
 ---
 
@@ -19,7 +19,8 @@ detailed_page_homepage_content: true
 ### John Andorfer
 
 Brewer/Owner
-John's Bio [dedicated page](ja_bio)
+John is a retired research scientist who holds a Masters in Plant Ecology and a PhD in Marine Plant Physiology. He has been professionally brewing for more than a decade.
+See John's brewing Bio here [dedicated page](ja_bio)
 
 ### Herb Atwell
 
