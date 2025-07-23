@@ -2,6 +2,7 @@
 title: "About Us"
 weight: 5
 header_menu: true
+detailed_page_path: /our-team-p5/
 ---
 
 
@@ -17,13 +18,18 @@ header_menu: true
 ### John Andorfer
 
 Brewer/Owner
+
 John is a retired research scientist who holds a Masters in Plant Ecology and a PhD in Marine Plant Physiology. He has been professionally brewing for more than a decade.
-See John's brewing Bio here [dedicated page](ja_bio)
+
+See John's brewing Bio [here](ja_bio)
 
 ### Herb Atwell
 
 Brewer/Owner
 
+Herb is...
+
+See Herb's Bio [here](herb_bio)
 ### Karl Herzberg
 
 Brewer/Owner
