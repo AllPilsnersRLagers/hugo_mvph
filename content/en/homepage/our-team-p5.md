@@ -2,8 +2,6 @@
 title: "About Us"
 weight: 5
 header_menu: true
-detailed_page_path: /ja_bio/
-detailed_page_homepage_content: true
 ---
 
 
