@@ -2,7 +2,7 @@
 title: "About Us"
 weight: 5
 header_menu: true
-detailed_page_path: /about-us/
+detailed_page_path: /#about-us/
 ---
 
 
