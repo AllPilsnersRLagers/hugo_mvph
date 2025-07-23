@@ -2,6 +2,8 @@
 title: "About Us"
 weight: 5
 header_menu: true
+detailed_page_path: /legal/
+detailed_page_homepage_content: true
 ---
 
 
@@ -17,6 +19,7 @@ header_menu: true
 ### John Andorfer
 
 Brewer/Owner
+John's Bio [dedicated page](ja_bio)
 
 ### Herb Atwell
 
