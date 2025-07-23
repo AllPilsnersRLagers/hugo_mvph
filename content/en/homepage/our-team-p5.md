@@ -2,7 +2,7 @@
 title: "About Us"
 weight: 5
 header_menu: true
-detailed_page_path: /our-team-p5/
+detailed_page_path: /#About Us/
 ---
 
 
@@ -34,7 +34,9 @@ See Herb's Bio [here](herb_bio)
 
 Brewer/Owner
 
-A lot, but let us get into the details with some lorem ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent feugiat lectus et magna placerat tincidunt. Nullam sit amet lectus vitae elit mollis rhoncus non eget lorem. Ut tempor sed dui quis volutpat.
+Karl is...
+
+See Karl's Bio [here](karl_bio)
 
 ----
 
