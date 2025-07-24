@@ -14,7 +14,7 @@ header_menu: true
 
 ## Our Team:
 
-### John Andorfer
+#### John Andorfer
 
 Brewer/Owner
 
@@ -23,14 +23,14 @@ been professionally brewing for more than a decade.
 
 See John's brewing Bio [here](ja_bio)
 
-### Herb Atwell
+#### Herb Atwell
 
 Brewer/Owner
 
 Herb is...
 
 See Herb's Bio [here](herb_bio)
-### Karl Herzberg
+#### Karl Herzberg
 
 Brewer/Owner
 
