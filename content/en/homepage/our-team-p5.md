@@ -12,7 +12,7 @@ header_menu: true
   class="ma0 w-75"
 >}}
 
-# Our Team:
+## Our Team:
 
 ### John Andorfer
 
@@ -40,7 +40,7 @@ See Karl's Bio [here](karl_bio)
 
 ----
 
-### Our Promise
+## Our Promise
 
 At MVPH, we are dedicated to brewing and serving top-quality beer. Our brewer owners maintain a clean and organized 
 work environment to ensure consistent quality. We carefully select suppliers and ingredients for freshness and peak 

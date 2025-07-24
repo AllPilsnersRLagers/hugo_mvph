@@ -86,15 +86,15 @@ enableEmoji = true
 
     [[params.contacts]]
         label = "email"
-        value = "mail@janedoe.com"
-        url = "mailto:mail@janedoe.com"
+        value = "mvpublichouse@gmail.com"
+        url = "mailto:mvpublichouse@gmail.com"
         icon = "fa fa-envelope"
 
     [[params.contacts]]
-        label = "GitHub"
-        value = "github.com/zjedi/hugo-scroll"
-        url = "https://github.com/zjedi/hugo-scroll"
-        icon = "fa-brands fa-github"
+        label = "Social"
+        value = "mvpublichouse.bsky.social"
+        url = "https://mvpublichouse.bsky.social"
+        icon = "fa-brands fa-bluesky"
 
     # Add additional contacts here!
     # [[params.contacts]]
