@@ -26,7 +26,7 @@ header_menu: true
   class="ma0 w-75"
 >}}
 
-## Live Music
+### MVPH Oktoberfest
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent feugiat lectus et magna placerat tincidunt. Nullam sit amet lectus vitae elit mollis rhoncus non eget lorem. Ut tempor sed dui quis volutpat.
 
