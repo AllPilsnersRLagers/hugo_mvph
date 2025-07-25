@@ -12,7 +12,7 @@ theme = "hugo-scroll"
 title = "Mnt. Valley Public House"
 
 # In order to add version information in the page's footer set to true.
-# enableGitInfo = true
+enableGitInfo = true
 
 # enable emoji processing in Markdown (valid only for pure markdown content)
 enableEmoji = true
