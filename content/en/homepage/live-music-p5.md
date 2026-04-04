@@ -21,7 +21,9 @@ header_menu: true
 ### On deck:
 
 TBD
+
 This weeks Artist Profile [here](music)
+
 ----
 ### This month's lineup
 TBD
