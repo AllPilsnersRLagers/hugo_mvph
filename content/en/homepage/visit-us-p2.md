@@ -22,4 +22,4 @@ Mountain Valley Public House is currently in the planning stages. Once financing
 
 ----
 
-# Coming Soon!
+# Coming Summer 2026!
