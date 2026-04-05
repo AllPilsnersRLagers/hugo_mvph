@@ -169,13 +169,15 @@
   caption=""
   class="ma0 w-75"
 >}}
->{{< figure
+> 
+{{< figure
   src="/images/acid_2.jpg"
   alt="acid_2"
   caption=""
   class="ma0 w-75"
 >}}
->{{< figure
+> 
+{{< figure
   src="/images/acid_3.jpg"
   alt="acid_3"
   caption=""
@@ -184,3 +186,27 @@
 >
 ----
 #### Insulating the Beer Cooler
+
+{{< figure
+  src="/images/cooler_1.jpg"
+  alt="cooler_1"
+  caption=""
+  class="ma0 w-75"
+>}}
+> 
+{{< figure
+  src="/images/cooler_2.jpg"
+  alt="cooler_2"
+  caption=""
+  class="ma0 w-75"
+>}}
+> 
+{{< figure
+  src="/images/cooler_3.jpg"
+  alt="cooler_3"
+  caption=""
+  class="ma0 w-75"
+>}}
+> 
+----
+#### Drywall
