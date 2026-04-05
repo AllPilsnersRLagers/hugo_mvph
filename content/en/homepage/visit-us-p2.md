@@ -18,7 +18,20 @@ weight: 2
 # into the header menu at the top of the homepage.
 header_menu: true
 ---
-Mountain Valley Public House is currently in the planning stages. Once financing and permitting are in place, construction will begin at our site on Monument Street. We are all excited to get moving on construction and then begin brewing some great beer! A target opening date will be announced soon.
+
+{{< figure
+  src="/images/592_monument.jpg"
+  alt="Brew Team"
+  caption=""
+  class="ma0 w-75"
+>}}
+
+Construction is well underway. The building at 592 Monument St. has been
+extensively renovated, with a new floor, roof, doors, and windows. The brewery's
+internal layout is now complete and finishing work has begun. There is still a
+ton of work to be done, but we hope to be brewing some fantastic beer soon!
+
+Check out pictures of our construction progress [here](construction)
 
 ----
 
