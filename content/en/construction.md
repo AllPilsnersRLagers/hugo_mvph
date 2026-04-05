@@ -83,3 +83,27 @@
 
 ----
 ### Framing
+
+{{< figure
+  src="/images/framing_1.jpg"
+  alt="Brew Team"
+  caption=""
+  class="ma0 w-75"
+>}}
+> 
+{{< figure
+  src="/images/framing_2.jpg"
+  alt="Brew Team"
+  caption=""
+  class="ma0 w-75"
+>}}
+> 
+{{< figure
+  src="/images/framing_3.jpg"
+  alt="Brew Team"
+  caption=""
+  class="ma0 w-75"
+>}}
+> 
+----
+### Plumbing/Electrical
