@@ -139,3 +139,48 @@
 ----
 #### Plumbing/Electrical
 
+{{< figure
+  src="/images/plumbing_electrical_1.jpg"
+  alt="plumbing_electrical_1"
+  caption=""
+  class="ma0 w-75"
+>}}
+>
+{{< figure
+  src="/images/plumbing_electrical_2.jpg"
+  alt="plumbing_electrical_2"
+  caption=""
+  class="ma0 w-75"
+>}}
+>
+{{< figure
+  src="/images/plumbing_electrical_3.jpg"
+  alt="plumbing_electrical_3"
+  caption=""
+  class="ma0 w-75"
+>}}
+>
+----
+#### Acid Staining Concrete Floors
+
+{{< figure
+  src="/images/acid_1.jpg"
+  alt="acid_1"
+  caption=""
+  class="ma0 w-75"
+>}}
+>{{< figure
+  src="/images/acid_2.jpg"
+  alt="acid_2"
+  caption=""
+  class="ma0 w-75"
+>}}
+>{{< figure
+  src="/images/acid_3.jpg"
+  alt="acid_3"
+  caption=""
+  class="ma0 w-75"
+>}}
+>
+----
+#### Insulating the Beer Cooler
