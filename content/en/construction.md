@@ -2,7 +2,7 @@
 
 ### Demolition
 
-
+----
 ### Trenching
 
 {{< figure
@@ -33,6 +33,7 @@
   class="ma0 w-75"
 >}}
 > 
+----
 ### Sewer/ Brewery Drains
 
 {{< figure
@@ -55,3 +56,30 @@
   caption=""
   class="ma0 w-75"
 >}}
+
+----
+### New Floor
+
+{{< figure
+  src="/images/floor_1.jpg"
+  alt="Brew Team"
+  caption=""
+  class="ma0 w-75"
+>}}
+> 
+> {{< figure
+  src="/images/floor_2.jpg"
+  alt="Brew Team"
+  caption=""
+  class="ma0 w-75"
+>}}
+> 
+> {{< figure
+  src="/images/floor_3.jpg"
+  alt="Brew Team"
+  caption=""
+  class="ma0 w-75"
+>}}
+
+----
+### Framing
