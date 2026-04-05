@@ -21,7 +21,7 @@ header_menu: true
 
 {{< figure
   src="/images/592_monument.jpg"
-  alt="Brew Team"
+  alt="592 Monument St."
   caption=""
   class="ma0 w-75"
 >}}
