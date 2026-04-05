@@ -2,6 +2,20 @@
 
 ### Demolition
 
+{{< figure
+  src="/images/demolition_1.jpg"
+  alt="demolition_1"
+  caption=""
+  class="ma0 w-75"
+>}}
+> 
+{{< figure
+  src="/images/demolition_2.jpg"
+  alt="demolition_2"
+  caption=""
+  class="ma0 w-75"
+>}}
+> 
 ----
 ### Trenching
 
@@ -77,6 +91,13 @@
 {{< figure
   src="/images/floor_3.jpg"
   alt="floor_3"
+  caption=""
+  class="ma0 w-75"
+>}}
+> 
+{{< figure
+  src="/images/floor_4.jpg"
+  alt="floor_4"
   caption=""
   class="ma0 w-75"
 >}}
