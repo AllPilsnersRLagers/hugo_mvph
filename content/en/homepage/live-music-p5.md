@@ -22,8 +22,9 @@ header_menu: true
 
 TBD
 
-This weeks Artist Profile [here](music)
+This week's Artist Profile [here](artist)
 
 ----
 ### This month's lineup
-TBD
+
+This Month's Calendar of events [here](music)
