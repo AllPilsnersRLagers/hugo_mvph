@@ -21,12 +21,12 @@ See John's brewing Bio [here](ja_bio)
 
 #### Herb Atwell
 
-Herb is...
+Herb is a retired electrical engineer with a passion for craft brewing. Read more about Herb's business adventures in his 
+ Bio [here](herb_bio)
 
-See Herb's Bio [here](herb_bio)
 #### Karl Herzberg
 
-Karl is...
+Karl is a passionate and creative craft brewer.
 
 See Karl's Bio [here](karl_bio)
 
