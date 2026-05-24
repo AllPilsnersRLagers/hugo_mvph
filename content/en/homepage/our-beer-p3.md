@@ -17,8 +17,5 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent feugiat lectus
 
 ----
 
-## Beer Menu for the week of
-
-
 {{< csv-to-table "beer_menus/beer_menu.csv" >}}
 
