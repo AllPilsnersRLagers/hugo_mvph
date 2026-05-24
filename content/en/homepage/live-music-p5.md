@@ -25,6 +25,3 @@ TBD
 This week's Artist Profile [here](artist)
 
 ----
-### This month's lineup
-
-This Month's Calendar of events [here](music)
