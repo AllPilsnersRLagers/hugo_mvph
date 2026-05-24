@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+{{ with $file := .Get 0 }}
+  {{ with resources.Get $file }}
+    {{ with . | transform.Unmarshal }}
+<h3>{{ index . 0 }}</h3>
+      <table>
+
+        <thead>
+          <tr>
+            {{ range index . 1 }}
+              <th>{{ . }}</th>
+            {{ end }}
+          </tr>
+        </thead>
+        <tbody>
+          {{ range after 2 . }}
+            <tr>
+              {{ range . }}
+                <td>{{ . }}</td>
+              {{ end }}
+            </tr>
+          {{ end }}
+        </tbody>
+      </table>
+    {{ end }}
+  {{ else }}
+    {{ errorf "The %q shortcode was unable to find %s. See %s" $.Name $file $.Position }}
+  {{ end }}
+{{ else }}
+  {{ errorf "The %q shortcode requires one positional argument, the path to the CSV file relative to the assets directory. See %s" .Name .Position }}
+{{ end }}
+
+
+
+</body>
+</html>
