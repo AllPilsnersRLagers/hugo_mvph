@@ -228,6 +228,106 @@
   caption=""
   class="ma0 w-75"
 >}}
+>
+{{< figure
+  src="/images/cooler_4.jpg"
+  alt="cooler_4"
+  caption=""
+  class="ma0 w-75"
+>}}
 > 
 ----
 #### Drywall
+
+{{< figure
+  src="/images/drywall_1.jpg"
+  alt="drywall_1"
+  caption=""
+  class="ma0 w-75"
+>}}
+> 
+{{< figure
+  src="/images/drywall_2.jpg"
+  alt="drywall_2"
+  caption=""
+  class="ma0 w-75"
+>}}
+> 
+{{< figure
+  src="/images/drywall_3.jpg"
+  alt="drywall_3"
+  caption=""
+  class="ma0 w-75"
+>}}
+> 
+----
+#### Brewhouse Floor
+
+{{< figure
+  src="/images/brew_floor_1.jpg"
+  alt="brew_floor_1"
+  caption=""
+  class="ma0 w-75"
+>}}
+> 
+{{< figure
+  src="/images/brew_floor_2.jpg"
+  alt="brew_floor_2"
+  caption=""
+  class="ma0 w-75"
+>}}
+> 
+{{< figure
+  src="/images/brew_floor_3.jpg"
+  alt="brew_floor_3"
+  caption=""
+  class="ma0 w-75"
+>}}
+> 
+----
+#### Brewing Equipment
+{{< figure
+  src="/images/equipment_1.jpg"
+  alt="equipment_1"
+  caption=""
+  class="ma0 w-75"
+>}}
+> 
+{{< figure
+  src="/images/equipment_2.jpg"
+  alt="equipment_2"
+  caption=""
+  class="ma0 w-75"
+>}}
+> 
+{{< figure
+  src="/images/equipment_3.jpg"
+  alt="equipment_3"
+  caption=""
+  class="ma0 w-75"
+>}}
+> 
+----
+#### Bar
+{{< figure
+  src="/images/bar_1.jpg"
+  alt="bar_1"
+  caption=""
+  class="ma0 w-75"
+>}}
+> 
+{{< figure
+  src="/images/bar_2.jpg"
+  alt="bar_2"
+  caption=""
+  class="ma0 w-75"
+>}}
+> 
+{{< figure
+  src="/images/bar_3.jpg"
+  alt="bar_3"
+  caption=""
+  class="ma0 w-75"
+>}}
+> 
+----
