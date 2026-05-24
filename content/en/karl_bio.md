@@ -30,4 +30,4 @@ managing a beautifully chaotic pack of 12 dogs 16 pigs 8 goats 4 sheep along
 with some chickens and turkeys at home.
 
 Stop by the public house at 592 Monument Street, grab a seat at the bar, and say
-hello
+hello.
