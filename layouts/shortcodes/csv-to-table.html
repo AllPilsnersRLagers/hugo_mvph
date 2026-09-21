@@ -9,7 +9,7 @@
 {{ with $file := .Get 0 }}
   {{ with resources.Get $file }}
     {{ with . | transform.Unmarshal }}
-<h4>What's on tap for the week of {{ index . 0 }}</h4>
+<h5>What's on tap for the week of {{ index . 0 }}</h5>
       <table>
 
         <thead>
