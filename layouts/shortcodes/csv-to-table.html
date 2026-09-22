@@ -10,7 +10,7 @@
   {{ with resources.Get $file }}
     {{ with . | transform.Unmarshal }}
 <h5>What's on tap for the week of {{ index . 0 }}</h5>
-      <table style="width:100%" border="1" cellpadding="15">
+      <table style="width:100%" cellpadding="15">
 
         <thead>
           <tr>
