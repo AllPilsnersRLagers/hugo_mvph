@@ -11,7 +11,9 @@
     {{ with . | transform.Unmarshal }}
 <h5>What's on tap for the week of {{ index . 0 }}</h5>
       <table>
-
+<colgroup>
+    <col span="2" style="background-color: #D6EEEE">
+  </colgroup>
         <thead>
           <tr>
             {{ range index . 1 }}
