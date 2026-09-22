@@ -2,6 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+  <style>
+body {background-color: powderblue;}
+h5   {color: blue;}
+</style>
     <title>Title</title>
 </head>
 <body>
@@ -10,12 +14,12 @@
   {{ with resources.Get $file }}
     {{ with . | transform.Unmarshal }}
 <h5>What's on tap for the week of {{ index . 0 }}</h5>
-      <table style="width:100%" cellpadding="15">
+      <table>
 
         <thead>
           <tr>
             {{ range index . 1 }}
-              <th style="width:25%">{{ . }}</th>
+              <th>{{ . }}</th>
             {{ end }}
           </tr>
         </thead>
