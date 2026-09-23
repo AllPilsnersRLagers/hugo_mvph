@@ -16,13 +16,6 @@
 <h5>What's on tap for the week of {{ index . 0 }}</h5>
       <table>
 
-        <thead>
-          <tr>
-            {{ range index . 1 }}
-              <th>{{ . }}</th>
-            {{ end }}
-          </tr>
-        </thead>
         <tbody>
           {{ range after 2 . }}
             <tr>
