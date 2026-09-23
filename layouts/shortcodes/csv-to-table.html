@@ -5,6 +5,10 @@
   <style>
     h5 {color: red; }
     table {font-size: 80%; }
+    .name {width: 25%; }
+    .beer_style {width: 25%; }
+    .description {width: 30%; }
+    .abv {width: 20%; }
 </style>
     <title>Title</title>
 </head>
@@ -15,7 +19,17 @@
     {{ with . | transform.Unmarshal }}
 <h5>What's on tap for the week of {{ index . 0 }}</h5>
       <table>
-
+        <colgroup span="1" class="name"></colgroup>
+        <colgroup span="1" class="beer_style"></colgroup>
+        <colgroup span="1" class="description"></colgroup>
+        <colgroup span="1" class="abv"></colgroup>
+        <thead>
+          <tr>
+            {{ range index . 1 }}
+              <th>{{ . }}</th>
+            {{ end }}
+          </tr>
+        </thead>
         <tbody>
           {{ range after 2 . }}
             <tr>
