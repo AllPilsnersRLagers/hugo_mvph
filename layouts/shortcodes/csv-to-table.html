@@ -17,7 +17,7 @@
 {{ with $file := .Get 0 }}
   {{ with resources.Get $file }}
     {{ with . | transform.Unmarshal }}
-<h5>What's on tap for the week of {{ index . 0 }}</h5>
+<h5>What's on tap for the week of {{ index . 0 0 }}</h5>
       <table>
         <colgroup span="1" class="name"></colgroup>
         <colgroup span="1" class="beer_style"></colgroup>
