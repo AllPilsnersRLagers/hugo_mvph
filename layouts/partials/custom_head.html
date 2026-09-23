@@ -43,3 +43,10 @@
 {{ range seq 9 4 }}{{ $size := pow 2 . }}{{ $file := replace "images/favicon-##x##.png" "##" $size }}{{ with resources.Get $file }}
 <link rel="icon" type="{{ .MediaType.Type }}" sizes="{{- $size -}}x{{- $size -}}" href="{{ .RelPermalink }}" />{{ end }}{{ end }}
 
+<!-- Web app manifest: Android uses these icons for home-screen shortcuts -->
+{{ $icons := slice }}
+{{ range slice 192 512 }}{{ $size := printf "%dx%d" . . }}{{ with resources.Get (printf "images/android-chrome-%s.png" $size) }}
+{{ $icons = $icons | append (dict "src" .RelPermalink "sizes" $size "type" .MediaType.Type) }}{{ end }}{{ end }}
+{{ $manifest := dict "name" site.Title "short_name" "MVPH" "icons" $icons "theme_color" "#000000" "background_color" "#000000" "display" "browser" "start_url" "/" }}
+{{ with resources.FromString "site.webmanifest" (jsonify (dict "indent" "  ") $manifest) }}<link rel="manifest" href="{{ .RelPermalink }}" />{{ end }}
+
