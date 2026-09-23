@@ -20,7 +20,7 @@ header_menu: true
 ---
 
 {{< figure
-  src="/images/592_monument.jpg"
+  src="/images/Garage and Patio_retouched.jpeg"
   alt="592 Monument St."
   caption=""
   class="ma0 w-75"
