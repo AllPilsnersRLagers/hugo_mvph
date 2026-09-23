@@ -1,22 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-  <style>
-    h5 {color: red; }
-    table {font-size: 80%; }
-    .name {width: 25%; }
-    .beer_style {width: 19%; }
-    .description {width: 42%; }
-    .abv {width: 14%; }
+<style>
+  .beer-menu h5 {color: red; }
+  .beer-menu table {font-size: 80%; }
+  .beer-menu .name {width: 25%; }
+  .beer-menu .beer_style {width: 19%; }
+  .beer-menu .description {width: 42%; }
+  .beer-menu .abv {width: 14%; }
 </style>
-    <title>Title</title>
-</head>
-<body>
 
 {{ with $file := .Get 0 }}
   {{ with resources.Get $file }}
     {{ with . | transform.Unmarshal }}
+<div class="beer-menu">
 <h5>What's on tap for the week of {{ index . 0 0 }}</h5>
       <table>
         <colgroup span="1" class="name"></colgroup>
@@ -40,6 +34,7 @@
           {{ end }}
         </tbody>
       </table>
+</div>
     {{ end }}
   {{ else }}
     {{ errorf "The %q shortcode was unable to find %s. See %s" $.Name $file $.Position }}
@@ -47,8 +42,3 @@
 {{ else }}
   {{ errorf "The %q shortcode requires one positional argument, the path to the CSV file relative to the assets directory. See %s" .Name .Position }}
 {{ end }}
-
-
-
-</body>
-</html>
