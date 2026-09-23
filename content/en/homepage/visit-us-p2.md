@@ -35,4 +35,4 @@ Check out pictures of our construction progress [here](construction)
 
 ----
 
-# Coming Summer 2026!
+# Coming Soon!
