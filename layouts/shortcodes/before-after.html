@@ -3,6 +3,9 @@
   between them. The after photo fills the frame (cropped from the top);
   before_zoom / before_x / before_y (percent) nudge the before photo so
   the two line up.
+
+  With JavaScript, touching/dragging the photo (or using the arrow keys)
+  stops the crossfade and turns it into a before/after slider.
 */ -}}
 {{ $before := resources.Get (.Get "before") }}
 {{ $after := resources.Get (.Get "after") }}
@@ -12,19 +15,24 @@
 {{ $before = $before.Resize "1200x webp q80" }}
 {{ $after = $after.Resize "1200x webp q80" }}
 
-{{ if not (.Page.Store.Get "before-after-css") }}
-{{ .Page.Store.Set "before-after-css" true }}
+{{ if not (.Page.Store.Get "before-after-assets") }}
+{{ .Page.Store.Set "before-after-assets" true }}
 <style>
   .before-after {margin: 0 auto 1.5em; }
   .before-after .ba-frame {position: relative; aspect-ratio: 16 / 9; overflow: hidden; }
   .before-after .ba-layer {position: absolute; inset: 0; }
   .before-after img {position: absolute; max-width: none; margin: 0; }
   .before-after .ba-after img {width: 100%; height: 100%; object-fit: cover; object-position: center bottom; }
-  .before-after .ba-label {
-    position: absolute; left: .75em; bottom: .75em; padding: .2em .7em;
+  .before-after .ba-label,
+  .before-after .ba-hint {
+    position: absolute; bottom: .75em; padding: .2em .7em;
     background: rgba(0, 0, 0, .6); color: #fff; border-radius: 1em;
     font-size: .8em; letter-spacing: .08em; text-transform: uppercase;
+    pointer-events: none; user-select: none;
   }
+  .before-after .ba-before .ba-label {left: .75em; }
+  .before-after .ba-after .ba-label {right: .75em; }
+
   /* 12s loop: Then 3s, fade 3s, Now 4s, fade back 2s */
   .before-after .ba-after {animation: ba-crossfade 12s ease-in-out infinite; }
   @keyframes ba-crossfade {
@@ -35,19 +43,98 @@
   @media (prefers-reduced-motion: reduce) {
     .before-after .ba-after {animation: none; opacity: 1; }
   }
+
+  /* Slider (only once the script has run) */
+  .before-after .ba-hint,
+  .before-after .ba-divider {display: none; }
+  .before-after.ba-js .ba-frame {cursor: ew-resize; touch-action: pan-y; }
+  .before-after.ba-js .ba-frame:focus-visible {outline: 3px solid var(--highlight, #19A974); outline-offset: 2px; }
+  .before-after.ba-js .ba-hint {display: block; left: 50%; transform: translateX(-50%); white-space: nowrap; }
+  .before-after.ba-sliding .ba-hint {display: none; }
+  .before-after.ba-sliding .ba-after {animation: none; opacity: 1; clip-path: inset(0 0 0 var(--ba-pos, 50%)); }
+  .before-after.ba-sliding .ba-divider {
+    display: block; position: absolute; top: 0; bottom: 0; left: var(--ba-pos, 50%);
+    width: 2px; margin-left: -1px; background: #fff; box-shadow: 0 0 4px rgba(0, 0, 0, .5);
+    pointer-events: none;
+  }
+  .before-after .ba-handle {
+    position: absolute; top: 50%; left: 50%; width: 2.2em; height: 2.2em;
+    transform: translate(-50%, -50%); border-radius: 50%;
+    background: #fff; box-shadow: 0 0 4px rgba(0, 0, 0, .5);
+    display: flex; align-items: center; justify-content: center; color: #333;
+  }
 </style>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  document.querySelectorAll(".before-after").forEach(function (fig) {
+    var frame = fig.querySelector(".ba-frame");
+    var pos = 50;
+    var dragging = false;
+
+    function set(p) {
+      pos = Math.max(0, Math.min(100, p));
+      fig.style.setProperty("--ba-pos", pos + "%");
+      frame.setAttribute("aria-valuenow", Math.round(pos));
+      frame.setAttribute("aria-valuetext", Math.round(pos) + "% then, " + Math.round(100 - pos) + "% now");
+    }
+    function slideTo(e) {
+      var r = frame.getBoundingClientRect();
+      fig.classList.add("ba-sliding");
+      set((e.clientX - r.left) / r.width * 100);
+    }
+
+    fig.classList.add("ba-js");
+    frame.tabIndex = 0;
+    frame.setAttribute("role", "slider");
+    frame.setAttribute("aria-label", "Compare the building then and now");
+    frame.setAttribute("aria-valuemin", "0");
+    frame.setAttribute("aria-valuemax", "100");
+    set(pos);
+
+    // Mouse acts on press; touch waits for a sideways drag or a tap, so a
+    // vertical swipe over the photo just scrolls (the browser cancels it).
+    frame.addEventListener("pointerdown", function (e) {
+      dragging = true;
+      frame.setPointerCapture(e.pointerId);
+      if (e.pointerType === "mouse") slideTo(e);
+    });
+    frame.addEventListener("pointermove", function (e) {
+      if (dragging) slideTo(e);
+    });
+    frame.addEventListener("pointerup", function (e) {
+      if (dragging) slideTo(e);
+      dragging = false;
+    });
+    frame.addEventListener("pointercancel", function () {
+      dragging = false;
+    });
+    frame.addEventListener("keydown", function (e) {
+      var step = e.shiftKey ? 10 : 2;
+      if (e.key === "ArrowLeft") set(pos - step);
+      else if (e.key === "ArrowRight") set(pos + step);
+      else if (e.key === "Home") set(0);
+      else if (e.key === "End") set(100);
+      else return;
+      e.preventDefault();
+      fig.classList.add("ba-sliding");
+    });
+  });
+});
+</script>
 {{ end }}
 
 <figure class="before-after">
   <div class="ba-frame">
     <div class="ba-layer ba-before">
-      <img src="{{ $before.RelPermalink }}" alt="{{ .Get "alt_before" }}" loading="lazy"
+      <img src="{{ $before.RelPermalink }}" alt="{{ .Get "alt_before" }}" loading="lazy" draggable="false"
         style="width: {{ .Get "before_zoom" | default 100 }}%; left: {{ .Get "before_x" | default 0 }}%; top: {{ .Get "before_y" | default 0 }}%;">
       <span class="ba-label">Then</span>
     </div>
     <div class="ba-layer ba-after">
-      <img src="{{ $after.RelPermalink }}" alt="{{ .Get "alt_after" }}" loading="lazy">
+      <img src="{{ $after.RelPermalink }}" alt="{{ .Get "alt_after" }}" loading="lazy" draggable="false">
       <span class="ba-label">Now</span>
     </div>
+    <div class="ba-divider" aria-hidden="true"><span class="ba-handle">&#x27F7;</span></div>
+    <span class="ba-hint" aria-hidden="true">&#x27F7; Drag to compare</span>
   </div>
 </figure>
