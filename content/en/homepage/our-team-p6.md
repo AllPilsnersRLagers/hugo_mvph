@@ -12,6 +12,7 @@ header_menu: true
   class="ma0 w-75"
 >}}
 ### Brewer/Owners
+
 #### John Andorfer
 
 John is a retired research scientist who holds a Masters in Plant Ecology and a PhD in Marine Plant Physiology. He has
