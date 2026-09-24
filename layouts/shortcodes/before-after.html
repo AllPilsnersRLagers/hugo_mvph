@@ -1,0 +1,53 @@
+{{- /*
+  Stacks a "before" and "after" photo in one 16:9 frame and crossfades
+  between them. The after photo fills the frame (cropped from the top);
+  before_zoom / before_x / before_y (percent) nudge the before photo so
+  the two line up.
+*/ -}}
+{{ $before := resources.Get (.Get "before") }}
+{{ $after := resources.Get (.Get "after") }}
+{{ if not (and $before $after) }}
+  {{ errorf "The %q shortcode could not find the before and/or after image. See %s" .Name .Position }}
+{{ end }}
+{{ $before = $before.Resize "1200x webp q80" }}
+{{ $after = $after.Resize "1200x webp q80" }}
+
+{{ if not (.Page.Store.Get "before-after-css") }}
+{{ .Page.Store.Set "before-after-css" true }}
+<style>
+  .before-after {margin: 0 auto 1.5em; }
+  .before-after .ba-frame {position: relative; aspect-ratio: 16 / 9; overflow: hidden; }
+  .before-after .ba-layer {position: absolute; inset: 0; }
+  .before-after img {position: absolute; max-width: none; margin: 0; }
+  .before-after .ba-after img {width: 100%; height: 100%; object-fit: cover; object-position: center bottom; }
+  .before-after .ba-label {
+    position: absolute; left: .75em; bottom: .75em; padding: .2em .7em;
+    background: rgba(0, 0, 0, .6); color: #fff; border-radius: 1em;
+    font-size: .8em; letter-spacing: .08em; text-transform: uppercase;
+  }
+  /* 12s loop: Then 3s, fade 3s, Now 4s, fade back 2s */
+  .before-after .ba-after {animation: ba-crossfade 12s ease-in-out infinite; }
+  @keyframes ba-crossfade {
+    0%, 25% {opacity: 0; }
+    50%, 83.3% {opacity: 1; }
+    100% {opacity: 0; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .before-after .ba-after {animation: none; opacity: 1; }
+  }
+</style>
+{{ end }}
+
+<figure class="before-after">
+  <div class="ba-frame">
+    <div class="ba-layer ba-before">
+      <img src="{{ $before.RelPermalink }}" alt="{{ .Get "alt_before" }}" loading="lazy"
+        style="width: {{ .Get "before_zoom" | default 100 }}%; left: {{ .Get "before_x" | default 0 }}%; top: {{ .Get "before_y" | default 0 }}%;">
+      <span class="ba-label">Then</span>
+    </div>
+    <div class="ba-layer ba-after">
+      <img src="{{ $after.RelPermalink }}" alt="{{ .Get "alt_after" }}" loading="lazy">
+      <span class="ba-label">Now</span>
+    </div>
+  </div>
+</figure>

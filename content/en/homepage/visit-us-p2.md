@@ -19,11 +19,14 @@ weight: 2
 header_menu: true
 ---
 
-{{< figure
-  src="/images/Garage and Patio_retouched.jpeg"
-  alt="592 Monument St."
-  caption=""
-  class="ma0 w-75"
+{{< before-after
+  before="images/592_monument.jpg"
+  after="images/Garage and Patio_retouched.jpeg"
+  alt_before="592 Monument St. before renovation"
+  alt_after="592 Monument St. today"
+  before_zoom="104"
+  before_x="-0.4"
+  before_y="-2"
 >}}
 
 Construction is well underway. The building at 592 Monument St. has been
