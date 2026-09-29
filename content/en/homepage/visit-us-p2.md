@@ -42,7 +42,7 @@ Check out pictures of our construction progress [here](construction)
 
 # Our Hours of Operation:
 
-Tuesday - Thursday 4:00 PM - 9:00 PM
-Friday 4:00 PM - 10:00 PM
-Saturday 2:00 PM - 10:00 PM
+Tuesday - Thursday 4:00 PM - 9:00 PM,
+Friday 4:00 PM - 10:00 PM,
+Saturday 2:00 PM - 10:00 PM,
 Sunday 2:00 PM - 8:00 PM
