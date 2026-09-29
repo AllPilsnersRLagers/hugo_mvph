@@ -29,13 +29,20 @@ header_menu: true
   before_y="-2"
 >}}
 
-Construction is well underway. The building at 592 Monument St. has been
-extensively renovated, with a new floor, roof, doors, and windows. The brewery's
-internal layout is now complete and finishing work has begun. There is still a
-ton of work to be done, but we hope to be brewing some fantastic beer soon!
+Construction on the pub has been completed. The building at 592 Monument St. has
+been extensively renovated, with a new floor, roof, doors, and windows. A
+beautiful bar and fireplace has been added, creating a cosy and inviting
+atmosphere. The brewery is up and running and turning out some great tasting
+offerings.
+
 
 Check out pictures of our construction progress [here](construction)
 
 ----
 
-# Coming Soon!
+# Our Hours of Operation:
+
+Tuesday - Thursday 4:00 PM - 9:00 PM
+Friday 4:00 PM - 10:00 PM
+Saturday 2:00 PM - 10:00 PM
+Sunday 2:00 PM - 8:00 PM
