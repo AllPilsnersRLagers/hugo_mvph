@@ -97,11 +97,11 @@ enableEmoji = true
         icon = "fa-brands fa-bluesky"
 
     # Add additional contacts here!
-    # [[params.contacts]]
-    #     label = ""
-    #     value = ""
-    #     url = ""
-    #     icon = ""
+    [[params.contacts]]
+        label = "Social"
+        value = "MV Public House"
+        url = "https://www.facebook.com/MVPublicHouse/"
+        icon = "fa-brands fa-facebook"
 
 # Define additional languages
 [languages]
