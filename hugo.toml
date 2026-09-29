@@ -99,7 +99,7 @@ enableEmoji = true
     # Add additional contacts here!
     [[params.contacts]]
         label = "Social"
-        value = "MV Public House"
+        value = "MV Public House on Facebook"
         url = "https://www.facebook.com/MVPublicHouse/"
         icon = "fa-brands fa-facebook"
 
