@@ -80,8 +80,8 @@ enableEmoji = true
 
     [[params.contacts]]
         label = "phone"
-        value = "+49 1111 555555"
-        url = "tel:+49 1111 555555"
+        value = "+1 434 396 8384"
+        url = "tel:+1 434 396 8384"
         icon = "fa fa-phone"
 
     [[params.contacts]]
