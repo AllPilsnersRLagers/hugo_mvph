@@ -1,5 +1,5 @@
 ---
-title: 'Visit Us Soon'
+title: 'Visit Us'
 
 # The "header_menu_title" value will be used as text for header buttons.
 # The "title" value will be used if value for "header_menu_title" is not provided.
