@@ -39,6 +39,9 @@ _________________
   class="ma0 w-75"
 >}}
 
+_________________
+
+{{< truck-csv-to-table "beer_menus/truck_menu.csv" >}}
 
 #### See our Calendar of events for a more details [here](music)
 
