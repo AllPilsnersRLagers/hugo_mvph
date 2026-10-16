@@ -25,12 +25,9 @@ header_menu: true
   caption=""
   class="ma0 w-75"
 >}}
-
-## This month's lineup
-
 _________________
 
-#### Food Trucks
+### Food Trucks
 
 {{< figure
   src="/images/food_truck_generic.jpg"
@@ -43,11 +40,13 @@ _________________
 
 {{< truck-csv-to-table "beer_menus/truck_menu.csv" >}}
 
-#### Special Events
+### Special Events
 
 _________________
 
 {{< event-csv-to-table "beer_menus/event_menu.csv" >}}
+
+_________________
 
 #### See our Calendar of events for a more details [here](music)
 
