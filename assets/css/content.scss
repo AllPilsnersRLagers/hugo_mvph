@@ -273,6 +273,7 @@ table {
     tbody>tr:nth-child(even) {
         background-color: #fffcd1;
         background-blend-mode: lighten;
+        color: #333333;
     }
 
     &.plain tbody>tr:nth-child(odd)>td,
