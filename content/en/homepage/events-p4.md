@@ -27,7 +27,7 @@ header_menu: true
 >}}
 _________________
 
-### Food Trucks
+#### Food Trucks
 
 {{< figure
   src="/images/food_truck_generic.jpg"
@@ -40,7 +40,7 @@ _________________
 
 {{< truck-csv-to-table "beer_menus/truck_menu.csv" >}}
 
-### Special Events
+#### Special Events
 
 _________________
 
