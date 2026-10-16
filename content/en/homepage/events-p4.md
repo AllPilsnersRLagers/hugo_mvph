@@ -28,7 +28,7 @@ header_menu: true
 
 ## This month's lineup
 
-### Food Truck
+#### Food Truck
 
 {{< figure
   src="/images/food_truck_generic.jpg"
@@ -38,5 +38,5 @@ header_menu: true
 >}}
 
 
-### This Month's Calendar of events [here](music)
+#### This Month's Calendar of events [here](music)
 
