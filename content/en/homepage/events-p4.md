@@ -28,4 +28,15 @@ header_menu: true
 
 ## This month's lineup
 
-This Month's Calendar of events [here](music)
+### Food Truck
+
+{{< figure
+  src="/images/food_truck_generic.jpg"
+  alt="Brew Team"
+  caption=""
+  class="ma0 w-75"
+>}}
+
+
+### This Month's Calendar of events [here](music)
+
