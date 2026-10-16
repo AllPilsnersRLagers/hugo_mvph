@@ -11,7 +11,7 @@
   {{ with resources.Get $file }}
     {{ with . | transform.Unmarshal }}
 <div class="truck-menu">
-<h5>Scheduled Food Trucks Starting{{ index . 0 0 }}</h5>
+<h5>Scheduled Food Trucks Starting {{ index . 0 0 }}</h5>
       <table>
         <colgroup span="1" class="date"> </colgroup>
         <colgroup span="1" class="name"></colgroup>
