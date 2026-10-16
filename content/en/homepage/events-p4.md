@@ -40,5 +40,5 @@ _________________
 >}}
 
 
-#### This Month's Calendar of events [here](music)
+#### See our Calendar of events for a more details [here](music)
 
