@@ -43,5 +43,11 @@ _________________
 
 {{< truck-csv-to-table "beer_menus/truck_menu.csv" >}}
 
+#### Special Events
+
+_________________
+
+{{< event-csv-to-table "beer_menus/event_menu.csv" >}}
+
 #### See our Calendar of events for a more details [here](music)
 
