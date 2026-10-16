@@ -30,7 +30,7 @@ header_menu: true
 
 _________________
 
-#### Food Truck
+#### Food Trucks
 
 {{< figure
   src="/images/food_truck_generic.jpg"
