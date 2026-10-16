@@ -1,9 +1,10 @@
 <style>
   .truck-menu h5 {color: red; }
   .truck-menu table {font-size: 80%; }
+  .truck-menu .date (width: 15%; )
   .truck-menu .name {width: 25%; }
   .truck-menu .truck_style {width: 25%; }
-  .truck-menu .description {width: 50%; }
+  .truck-menu .description {width: 35%; }
 </style>
 
 {{ with $file := .Get 0 }}
@@ -12,6 +13,7 @@
 <div class="truck-menu">
 <h5>Scheduled Food Trucks {{ index . 0 0 }}</h5>
       <table>
+        <colgroup span="1" class="date"> </colgroup>
         <colgroup span="1" class="name"></colgroup>
         <colgroup span="1" class="truck_style"></colgroup>
         <colgroup span="1" class="description"></colgroup>
