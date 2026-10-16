@@ -1,6 +1,6 @@
 ## This week's artist profile
 
-Nothing scheduled at this time.
+No Artist Info at this time.
 
-Summer Events TBD
+Events TBD
 
