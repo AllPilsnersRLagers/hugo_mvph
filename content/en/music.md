@@ -1,3 +1,3 @@
-## MVPH Live Music, Food Trucks and Events
+## MVPH Music, Food Trucks and Events
 
 {{< calendar "Event Calendar" >}}
