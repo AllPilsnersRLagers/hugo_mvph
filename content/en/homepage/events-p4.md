@@ -32,7 +32,7 @@ header_menu: true
 
 {{< figure
   src="/images/food_truck_generic.jpg"
-  alt="Brew Team"
+  alt="Food Truck"
   caption=""
   class="ma0 w-75"
 >}}
