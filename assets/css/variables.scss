@@ -29,6 +29,12 @@
     /* Dark section - background color */
     --section-dark-bg-color: #19A974;
 
+    /* Links inside section content (light and dark sections) */
+    --section-light-link-color: #0e6e4a;
+    --section-light-link-hover-color: #22343a;
+    --section-dark-link-color: #22343a;
+    --section-dark-link-hover-color: #fffcd1;
+
     /* Light&Dark section >quote. Suppressive color, compared to 'Light section - text color'*/
     --section-uni-quote: grey;
     /* Light&Dark section `code` a bit darker than 'Light section - background color' */

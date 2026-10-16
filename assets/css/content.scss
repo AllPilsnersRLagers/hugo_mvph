@@ -99,6 +99,26 @@ a {
     }
 }
 
+// Make links in section content stand out from the surrounding text
+.post-content a {
+    color: var(--section-light-link-color);
+    font-weight: bold;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 4px;
+
+    &:hover {
+        color: var(--section-light-link-hover-color);
+    }
+}
+
+.post-holder.dark .post-content a {
+    color: var(--section-dark-link-color);
+
+    &:hover {
+        color: var(--section-dark-link-hover-color);
+    }
+}
+
 /** ======== Lists ====================== */
 dl {
     margin: 1.6em 0;
