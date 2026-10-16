@@ -28,6 +28,8 @@ header_menu: true
 
 ## This month's lineup
 
+_________________
+
 #### Food Truck
 
 {{< figure
