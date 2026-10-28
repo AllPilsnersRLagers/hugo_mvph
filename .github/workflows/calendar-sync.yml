@@ -14,9 +14,14 @@ jobs:
   sync:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      # Always start from the newest main, so a re-run of an old job can still push.
+      - uses: actions/checkout@v7
+        with:
+          ref: main
 
-      - uses: astral-sh/setup-uv@v6
+      - uses: astral-sh/setup-uv@v10.3.3
+        with:
+          cache-dependency-glob: scripts/calendar_to_csv.py
 
       - name: Rebuild tables from calendar
         run: uv run scripts/calendar_to_csv.py
@@ -31,4 +36,5 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add assets/beer_menus/truck_menu.csv assets/beer_menus/event_menu.csv
           git commit -m "Update food truck and event tables from calendar"
-          git push
+          git pull --rebase origin main
+          git push origin HEAD:main
