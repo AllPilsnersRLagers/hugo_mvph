@@ -9,7 +9,7 @@
 
 Only calendar entries whose title starts with a tag are published:
 
-    Food: <truck name>     description = food style
+    Food: <truck name>     description = food style, or "Food: <truck name>, <style>"
     Music: <artist>        shown as "Live Music"
     Event: <event name>    description = description
 
@@ -99,7 +99,10 @@ def build_rows(calendar, today):
         lines = description_lines(event)
 
         if tag == "food":
-            trucks.append([when, name, " ".join(lines)])
+            style = " ".join(lines)
+            if not style and "," in name:
+                name, style = (part.strip() for part in name.split(",", 1))
+            trucks.append([when, name, style])
         elif tag == "music":
             events.append([when, "Live Music", name])
         else:
