@@ -1,9 +1,8 @@
 <style>
   .truck-menu table {font-size: 80%; }
-  .truck-menu .date {width: 21%; }
-  .truck-menu .name {width: 22%; }
-  .truck-menu .truck_style {width: 22%; }
-  .truck-menu .description {width: 35%; }
+  .truck-menu .date {width: 25%; }
+  .truck-menu .name {width: 40%; }
+  .truck-menu .truck_style {width: 35%; }
 </style>
 
 {{ with $file := .Get 0 }}
@@ -17,7 +16,6 @@
         <colgroup span="1" class="date"> </colgroup>
         <colgroup span="1" class="name"></colgroup>
         <colgroup span="1" class="truck_style"></colgroup>
-        <colgroup span="1" class="description"></colgroup>
         <thead>
           <tr>
             {{ range index . 0 }}

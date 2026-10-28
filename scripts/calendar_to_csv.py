@@ -9,7 +9,7 @@
 
 Only calendar entries whose title starts with a tag are published:
 
-    Food: <truck name>     description line 1 = style, later lines = description
+    Food: <truck name>     description = food style
     Music: <artist>        shown as "Live Music"
     Event: <event name>    description = description
 
@@ -99,8 +99,7 @@ def build_rows(calendar, today):
         lines = description_lines(event)
 
         if tag == "food":
-            style = lines[0] if lines else ""
-            trucks.append([when, name, style, " ".join(lines[1:])])
+            trucks.append([when, name, " ".join(lines)])
         elif tag == "music":
             events.append([when, "Live Music", name])
         else:
@@ -116,7 +115,7 @@ def write_csv(path, header, rows):
 def main():
     today = datetime.now(TIMEZONE).date()
     trucks, events = build_rows(fetch_calendar(CALENDAR_URL), today)
-    write_csv(TRUCK_CSV, ["Date", "Name", "Style", "Description"], trucks)
+    write_csv(TRUCK_CSV, ["Date", "Name", "Food Style"], trucks)
     write_csv(EVENT_CSV, ["Date", "Name", "Description"], events)
     print(f"Wrote {len(trucks)} food trucks and {len(events)} events from {today}.")
 
