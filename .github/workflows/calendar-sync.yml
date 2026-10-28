@@ -1,0 +1,34 @@
+# Refresh the food truck and special event tables from the public Google Calendar.
+# A push from this job triggers the usual Netlify deploy.
+name: Calendar sync
+
+on:
+  schedule:
+    - cron: "0 10 * * *"  # 10:00 UTC = 6 a.m. EDT / 5 a.m. EST
+  workflow_dispatch:       # "Run workflow" button on the Actions tab
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: astral-sh/setup-uv@v6
+
+      - name: Rebuild tables from calendar
+        run: uv run scripts/calendar_to_csv.py
+
+      - name: Commit if changed
+        run: |
+          if git diff --quiet assets/beer_menus/; then
+            echo "No calendar changes."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/beer_menus/truck_menu.csv assets/beer_menus/event_menu.csv
+          git commit -m "Update food truck and event tables from calendar"
+          git push
