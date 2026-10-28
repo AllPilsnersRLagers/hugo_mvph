@@ -46,6 +46,13 @@ _________________
 
 {{< event-csv-to-table "beer_menus/event_menu.csv" >}}
 
+{{< figure
+  src="/images/20261014_181708.jpg"
+  alt="Live music at the pub"
+  caption=""
+  class="ma0 w-75"
+>}}
+
 _________________
 
 #### See our Calendar of events for a more details [here](music)
