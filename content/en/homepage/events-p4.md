@@ -29,16 +29,16 @@ _________________
 
 #### Food Trucks
 
+_________________
+
+{{< truck-csv-to-table "beer_menus/truck_menu.csv" >}}
+
 {{< figure
   src="/images/food_truck_generic.jpg"
   alt="Food Truck"
   caption=""
   class="ma0 w-75"
 >}}
-
-_________________
-
-{{< truck-csv-to-table "beer_menus/truck_menu.csv" >}}
 
 #### Special Events
 
